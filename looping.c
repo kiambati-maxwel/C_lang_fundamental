@@ -106,3 +106,30 @@ int factorial(int n){
            return 1;
      }         
 }
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+#include <stdbool.h>
+
+
+bool prime(int);
+int main() {
+    // Write C code here
+    printf("%d", (int)prime(88));
+    
+    return 0;
+}
+
+ bool prime(int n){
+   
+    if(n == 1){
+        return false;
+    }
+    for(int i=2; i<sqrt(n); i++){
+        if(n%i == 0){
+            return false;
+        }else{
+            return true;
+        }
+    }
+}
